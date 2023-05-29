@@ -48,9 +48,10 @@ body {
 .catalogo #grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   -moz-column-gap: 10rem;
        column-gap: 10rem;
+  row-gap: 5rem;
   margin: 0px 300px;
   margin-top: 80px;
   justify-content: center;
