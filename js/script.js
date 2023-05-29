@@ -4,7 +4,7 @@ let edad = parseInt(prompt("Ingrese su edad:"));
 
 while (edad < 18){
     alert(`Disculpe ${nombre} tiene que ser mayor de edad para continuar`);
-    edad = parent(prompt("Ingrese su edad:"));
+    edad = parseInt(prompt("Ingrese su edad:"));
 }
 
 const productos = [
@@ -34,3 +34,5 @@ const filtro = productos.filter((el) => el.producto.includes("Whisky"));
 console.log(filtro);
 const filtro2 = productos.filter((el) => el.precio <= 3.000);
 console.log(filtro2);
+const busqueda = productos.find((el) => el.nombre === "Brahama");
+console.log(busqueda);
