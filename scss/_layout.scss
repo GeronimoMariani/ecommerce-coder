@@ -7,3 +7,52 @@ body {
     z-index: 1000;
     width: 100%;
 }
+
+.imagesContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 56px;
+    .image {
+        flex-basis: 33.33333333%;
+    }
+}
+
+.divH1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.catalogo {
+    #grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 10rem;
+        margin: 0px 300px;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .grid-item {
+            background-color: #ffffff;
+            width: 250px;
+            height: 420px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            h5 {
+                margin-top: 10px;
+            }
+            h3 {
+                margin-top: 10px;
+            }
+            h4 {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
