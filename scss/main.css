@@ -29,6 +29,20 @@ body {
   width: 100%;
 }
 
+#bienvenido {
+  color: #ffffff;
+  margin-right: 20px;
+}
+#bienvenido .fa-user {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.fa-cart-shopping {
+  margin: 30px;
+  font-size: 1.4rem;
+}
+
 .imagesContainer {
   display: flex;
   align-items: center;
@@ -61,7 +75,7 @@ body {
 .catalogo #grid-container .grid-item {
   background-color: #ffffff;
   width: 250px;
-  height: 420px;
+  height: auto;
 }
 .catalogo #grid-container .grid-item img {
   max-width: 100%;
@@ -75,4 +89,16 @@ body {
 }
 .catalogo #grid-container .grid-item h4 {
   margin-top: 10px;
+}
+.catalogo #grid-container .grid-item .btnCarrito {
+  margin: 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 8px;
+  transition: transform 0.4s ease-out;
+}
+.catalogo #grid-container .grid-item .btnCarrito:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */

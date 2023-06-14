@@ -8,6 +8,20 @@ body {
     width: 100%;
 }
 
+#bienvenido {
+    color: #ffffff;
+    margin-right: 20px;
+    .fa-user {
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+}
+
+.fa-cart-shopping {
+    margin: 30px;
+    font-size: 1.4rem;
+}
+
 .imagesContainer {
     display: flex;
     align-items: center;
@@ -39,7 +53,7 @@ body {
         .grid-item {
             background-color: #ffffff;
             width: 250px;
-            height: 420px;
+            height: auto;
             img {
                 max-width: 100%;
                 height: auto;
@@ -52,6 +66,18 @@ body {
             }
             h4 {
                 margin-top: 10px;
+            }
+            .btnCarrito {
+                margin: 15px;
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 8px;
+                transition: transform .4s ease-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
