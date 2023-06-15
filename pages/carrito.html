@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEMA | Tienda Oficial</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="../scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
@@ -16,14 +15,14 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-subtle">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img width="50px" height="auto" src="./images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="../index.html"><img width="50px" height="auto" src="../images/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-theme="light" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="./index.html">INICIO</a>
+                            <a class="nav-link text-white" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" aria-current="page" href="#">VINOS</a>
@@ -41,7 +40,7 @@
                         <button class="btn btn-outline-light" type="submit">Buscar</button>
                     </form>
                     <div class="carrito">
-                        <a href="./pages/carrito.html">
+                        <a href="./carrito.html">
                             <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
                             <span class="contadorCarrito">0</span>
                         </a>
@@ -51,17 +50,64 @@
         </nav>
     </header>
     <main>
-        <div class="imagesContainer">
-            <img class="image" src="./images/whisky-jack-daniels-honey-750-ml--.jpg" alt="Jack Daniels Honey">
-            <img class="image" src="./images/fernet-branca---750-cc--.jpg" alt="Fernet Branca">
-            <img class="image" src="./images/whisky-jack-daniels-old-no-7-750-cc--.jpg" alt="Jack Daniels Old">
+        <div class="tituloCarrito">
+            <h2>Carrito:</h2>
         </div>
-        <div class="divH1">
-            <h1>PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</h1>
-        </div>
-        <section class="catalogo">
-            <div id="grid-container">
-                
+        <section class="carrito">
+            <div id="grid-container-carrito">
+                <p class="carrito-vacio">Tu carrito está vacío.</p>
+                <div id="grid-item-carrito">
+                    <img src="../images/cerveza-brahama-dorada-473-cc--.jpg" alt="">
+                    <div class="carrito-nombre">
+                        <h5>Nombre</h5>
+                        <h4>Nombre del producto</h4>
+                    </div>
+                    <div class="carrito-cantidad">
+                        <h5>Cantidad</h5>
+                        <h4>2</h4>
+                    </div>
+                    <div class="carrito-total">
+                        <h5>Total</h5>
+                        <h4>$1000</h4>
+                    </div>
+                    <div class="carrito-subtotal">
+                        <h5>Subtotal</h5>
+                        <h4>$1000</h4>
+                    </div>
+                    <button class="carrito-eliminar"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div id="grid-item-carrito">
+                    <img src="../images/cerveza-stella-artois-blanche-473-cc--.jpg" alt="">
+                    <div class="carrito-nombre">
+                        <h5>Nombre</h5>
+                        <h4>Nombre del producto</h4>
+                    </div>
+                    <div class="carrito-cantidad">
+                        <h5>Cantidad</h5>
+                        <h4>2</h4>
+                    </div>
+                    <div class="carrito-total">
+                        <h5>Total</h5>
+                        <h4>$1000</h4>
+                    </div>
+                    <div class="carrito-subtotal">
+                        <h5>Subtotal</h5>
+                        <h4>$1000</h4>
+                    </div>
+                    <button class="carrito-eliminar"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="carrito-acciones">
+                <div class="carrito-accion-vaciar">
+                    <button class="boton-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="carrito-accion-comprar">
+                    <div class="carrito-accion-total">
+                        <p>Total:</p>
+                        <p id="total"> $2000</p>
+                    </div>
+                    <button class="boton-comprar">Comprar</button>
+                </div>
             </div>
         </section>
     </main>

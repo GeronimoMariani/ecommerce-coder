@@ -1,4 +1,4 @@
-let nombre = prompt("Ingrese su nombre:");
+/* let nombre = prompt("Ingrese su nombre:");
 let apellido = prompt("Ingrese su apellido:");
 let edad = parseInt(prompt("Ingrese su edad:"));
 
@@ -16,7 +16,7 @@ let apellidoLocal = localStorage.getItem("apellido");
 let edadLocal = localStorage.getItem("edad"); 
 
 let bienvenido = document.getElementById("bienvenido");
-bienvenido.innerHTML = `<i class="fa-regular fa-user" style="color: #ffffff;"></i>Bienvenido: ${nombreLocal} ${apellidoLocal}`
+bienvenido.innerHTML = `<i class="fa-regular fa-user" style="color: #ffffff;"></i>Bienvenido: ${nombreLocal} ${apellidoLocal}` */
 
 class Bebidas {
     constructor(id, producto, nombre, precio, stock, image, alt) {
@@ -53,12 +53,12 @@ console.log(gridContainer);
 for (const producto of productos){
     let gridItem = document.createElement("div");
     gridItem.className = "grid-item";
-    gridItem.innerHTML = `<img src="${producto.image}" alt="${producto.alt}">
+    gridItem.innerHTML = `<img id="producto-imagen" src="${producto.image}" alt="${producto.alt}">
                             <span><hr></span>
-                            <h3>$${producto.precio}</h3>
-                            <h4>${producto.nombre}</h4>
-                            <h5>Stock: ${producto.stock}</h5>
-                            <button class= btnCarrito>Agregar al carrito</button>`
+                            <h3 id="producto-precio">$${producto.precio}</h3>
+                            <h4 id="producto-nombre">${producto.nombre}</h4>
+                            <h5 id="producto-stock">Stock: ${producto.stock}</h5>
+                            <button class= "btnCarrito">Agregar al carrito</button>`
     gridContainer.appendChild(gridItem);
 }
 
