@@ -1,4 +1,4 @@
-/* let nombre = prompt("Ingrese su nombre:");
+let nombre = prompt("Ingrese su nombre:");
 let apellido = prompt("Ingrese su apellido:");
 let edad = parseInt(prompt("Ingrese su edad:"));
 
@@ -7,16 +7,31 @@ while (edad < 18){
     edad = parseInt(prompt("Ingrese su edad:"));
 }
 
-localStorage.setItem("nombre", nombre);
-localStorage.setItem("apellido", apellido);
-localStorage.setItem("edad", edad);
+const infoUsuario = {
+    nombre: nombre,
+    apellido: apellido,
+    edad: edad,
+}
+
+console.log(infoUsuario);
+const usuarioJSON = JSON.stringify(infoUsuario);
+console.log(usuarioJSON)
+
+localStorage.setItem("usuario", usuarioJSON);
+
+const usuarioJSON2 = JSON.parse(usuarioJSON);
+console.log(usuarioJSON2);
+
+localStorage.setItem("nombre", usuarioJSON2.nombre);
+localStorage.setItem("apellido", usuarioJSON2.apellido);
+localStorage.setItem("edad", usuarioJSON2.edad);
 
 let nombreLocal = localStorage.getItem("nombre"); 
 let apellidoLocal = localStorage.getItem("apellido"); 
 let edadLocal = localStorage.getItem("edad"); 
 
 let bienvenido = document.getElementById("bienvenido");
-bienvenido.innerHTML = `<i class="fa-regular fa-user" style="color: #ffffff;"></i>Bienvenido: ${nombreLocal} ${apellidoLocal}` */
+bienvenido.innerHTML = `<i class="fa-regular fa-user" style="color: #ffffff;"></i>Bienvenido: ${nombreLocal} ${apellidoLocal}`
 
 class Bebidas {
     constructor(id, producto, nombre, precio, stock, image, alt) {
@@ -69,7 +84,13 @@ btnCarrito.forEach((selectCarrito) => {
 })
 
 function agregarCarrito(){
-    console.log("funciona")
+    Swal.fire({
+        icon: 'success',
+        title: 'Genial!',
+        text: 'Su producto a sido agregado correctamente!',
+        showConfirmButton: false,
+        timer: 1000,
+    })
     /* carrito.push(gridItem); */
 }
 
