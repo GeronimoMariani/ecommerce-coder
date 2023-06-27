@@ -31,6 +31,54 @@ header {
   top: 0;
   z-index: 1000;
   width: 100%;
+  height: auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar .subNav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.navBar .subNav .logo .logoImg {
+  width: 75px;
+  height: auto;
+  margin: 20px 50px;
+}
+.navBar .subNav .list {
+  display: flex;
+  gap: 20px;
+}
+.navBar .subNav .list .navItem .navButton {
+  background-color: black;
+  color: white;
+  border: 0px solid black;
+}
+.navBar .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navBar .user .carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar .user .carrito .fa-cart-shopping {
+  margin: 20px 10px 20px 20px;
+  font-size: 1.4rem;
+}
+.navBar .user .carrito .contadorCarrito {
+  font-size: 1.4rem;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding: 1px 7px;
+  margin-right: 20px;
 }
 
 #bienvenido {
@@ -51,12 +99,13 @@ header {
   margin: 20px 10px 20px 20px;
   font-size: 1.4rem;
 }
-.carrito .contadorCarrito {
+.carrito #contadorCarrito {
   font-size: 1.4rem;
   color: black;
   background-color: #ffffff;
   border-radius: 100px;
   padding: 1px 7px;
+  margin-right: 20px;
 }
 
 .imagesContainer {
@@ -72,7 +121,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .catalogo #grid-container {
@@ -121,7 +170,7 @@ header {
 
 /* CARRITO */
 main .tituloCarrito {
-  margin-top: 100px;
+  margin-top: 170px;
   margin-bottom: 50px;
   text-align: center;
 }

@@ -13,38 +13,19 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-subtle">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img width="50px" height="auto" src="../images/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-theme="light" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">VINOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">WHISKIES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">GIN</a>
-                        </li>
-                    </ul>
-                    <h6 id="bienvenido"><i class="fa-regular fa-user" style="color: #ffffff;"></i></h6>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" id="buscador" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Buscar</button>
-                    </form>
-                    <div class="carrito">
-                        <a href="./carrito.html">
-                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-                            <span class="contadorCarrito">0</span>
-                        </a>
-                    </div>
+        <nav class="navBar">
+            <div class="subNav">
+                <div class="logo">
+                    <a href="../index.html"><img class="logoImg" src="../images/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="user">
+                <h6 id="bienvenido"><i class="fa-regular fa-user" style="color: #ffffff;"></i></h6>
+                <div class="carrito">
+                    <a href="./pages/carrito.html">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        <span id="contadorCarrito">0</span>
+                    </a>
                 </div>
             </div>
         </nav>

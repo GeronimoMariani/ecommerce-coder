@@ -11,6 +11,58 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
+    height: auto;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .subNav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        .logo {
+            .logoImg {
+                width: 75px;
+                height: auto;
+                margin: 20px 50px;
+            }
+        }
+        .list {
+            display: flex;
+            gap: 20px;
+            .navItem {
+                .navButton {
+                    background-color: black;
+                    color: white;
+                    border: 0px solid black;
+                }
+            }
+        }
+    }
+    .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .carrito {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-cart-shopping {
+                margin: 20px 10px 20px 20px;
+                font-size: 1.4rem;
+            }
+            .contadorCarrito {
+                font-size: 1.4rem;
+                color: black;
+                background-color: #ffffff;
+                border-radius: 100px;
+                padding: 1px 7px;
+                margin-right: 20px;
+            }
+        }
+    }
 }
 
 #bienvenido {
@@ -30,12 +82,13 @@ header {
         margin: 20px 10px 20px 20px;
         font-size: 1.4rem;
     }
-    .contadorCarrito {
+    #contadorCarrito {
         font-size: 1.4rem;
         color: black;
         background-color: #ffffff;
         border-radius: 100px;
         padding: 1px 7px;
+        margin-right: 20px;
     }
 }
 
@@ -52,7 +105,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .catalogo {
@@ -104,7 +157,7 @@ header {
 
 main {
     .tituloCarrito {
-        margin-top: 100px;
+        margin-top: 170px;
         margin-bottom: 50px;
         text-align: center;
     }
