@@ -1,0 +1,110 @@
+[
+    {
+        "id": "cerveza-01",
+        "categoria": "cervezas",
+        "nombre": "Brahama",
+        "precio": 273,
+        "stock": 50,
+        "image": "./images/cerveza-brahama-dorada-473-cc--.jpg",
+        "alt": "Brahama"
+    },
+    {
+        "id": "cerveza-02",
+        "categoria": "cervezas",
+        "nombre": "Stella Artois Blanche",
+        "precio": 299,
+        "stock": 46,
+        "image": "./images/cerveza-stella-artois-blanche-473-cc--.jpg",
+        "alt": "Stella Artois Blanche"
+    },
+    {
+        "id": "cerveza-03",
+        "categoria": "cervezas",
+        "nombre": "Corona 710cc",
+        "precio": 759,
+        "stock": 26,
+        "image": "./images/cerveza-corona---710-cc--.jpg",
+        "alt": "Corona 710cc"
+    },
+    {
+        "id": "whisky-01",
+        "categoria": "whiskies",
+        "nombre": "Jack Daniels Honey",
+        "precio": 18743,
+        "stock": 10,
+        "image": "./images/whisky-jack-daniels-honey-750-ml--.jpg",
+        "alt": "Jack Daniels Honey"
+    },
+    {
+        "id": "whisky-02",
+        "categoria": "whiskies",
+        "nombre": "Jack Daniels Old",
+        "precio": 18743,
+        "stock": 15,
+        "image": "./images/whisky-jack-daniels-old-no-7-750-cc--.jpg",
+        "alt": "Jack Daniels Old"
+    },
+    {
+        "id": "whisky-03",
+        "categoria": "whiskies",
+        "nombre": "Johnnie Walker Red Label",
+        "precio": 9047,
+        "stock": 19,
+        "image": "./images/whisky-johnnie-walker-red-label-750ml.jpg",
+        "alt": "Johnnie Walker Red Label"
+    },
+    {
+        "id": "whisky-04",
+        "categoria": "whiskies",
+        "nombre": "Johnnie Walker Black Label",
+        "precio": 15155,
+        "stock": 13,
+        "image": "./images/whisky-johnnie-walker-black-label-750ml.jpg",
+        "alt": "Johnnie Walker Black Label"
+    },
+    {
+        "id": "whisky-05",
+        "categoria": "whiskies",
+        "nombre": "Johnnie Walker Blue Label",
+        "precio": 102000,
+        "stock": 3,
+        "image": "./images/whisky-johnnie-walker-blue-label-750ml.jpg",
+        "alt": "Johnnie Walker Blue Label"
+    },
+    {
+        "id": "aperitivo-01",
+        "categoria": "aperitivos",
+        "nombre": "Fernet Branca",
+        "precio": 2417,
+        "stock": 20,
+        "image": "./images/fernet-branca---750-cc--.jpg",
+        "alt": "Fernet Branca"
+    },
+    {
+        "id": "vino-01",
+        "categoria": "vinos",
+        "nombre": "Vino Varietal terra Malbec Roble",
+        "precio": 1450,
+        "stock": 18,
+        "image": "./images/vino-varietal-terra-malbec-roble-750-cc--.jpg",
+        "alt": "Vino Varietal terra Malbec Roble"
+    },
+    {
+        "id": "vino-02",
+        "categoria": "vinos",
+        "nombre": "Vino Varietal Dada Chocolate",
+        "precio": 1040,
+        "stock": 23,
+        "image": "./images/vino-varietal-dada-n§8-chocolate-750-cc--.jpg",
+        "alt": "Vino Varietal Dada Chocolate"
+    },
+    {
+        "id": "vino-03",
+        "categoria": "vinos",
+        "nombre": "Mosquita Muerta Blend Tintas",
+        "precio": 6400,
+        "stock": 8,
+        "image": "./images/vinos-premium-mosquita-muerta-blend-tintas-750-cc--.jpg",
+        "alt": "Mosquita Muerta Blend Tintas"
+    }
+]
