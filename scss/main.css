@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+.disabled {
+  visibility: hidden;
+}
+
 /* INDEX */
 body {
   background-color: #f2f2f2;
@@ -81,15 +85,6 @@ header {
   margin-right: 20px;
 }
 
-#bienvenido {
-  color: #ffffff;
-  margin-right: 20px;
-}
-#bienvenido .fa-user {
-  margin-right: 10px;
-  font-size: 1rem;
-}
-
 .carrito {
   display: flex;
   justify-content: center;
@@ -106,15 +101,6 @@ header {
   border-radius: 100px;
   padding: 1px 7px;
   margin-right: 20px;
-}
-
-.imagesContainer {
-  display: flex;
-  align-items: center;
-  padding-top: 56px;
-}
-.imagesContainer .image {
-  flex-basis: 33.33333333%;
 }
 
 .divH1 {
@@ -177,6 +163,7 @@ main .tituloCarrito {
 main .carrito-vacio {
   margin-top: 100px;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .carrito {
@@ -188,25 +175,26 @@ main .carrito-vacio {
   grid-template-columns: 1fr;
   row-gap: 50px;
   width: 70%;
+  margin-bottom: 40px;
 }
-.carrito #grid-container-carrito .carrito-vacio {
-  display: none;
-}
-.carrito #grid-container-carrito #grid-item-carrito {
+.carrito #grid-container-carrito .grid-item-carrito {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   border-radius: 15px;
 }
-.carrito #grid-container-carrito #grid-item-carrito .carrito-eliminar {
+.carrito #grid-container-carrito .grid-item-carrito .imgCarrito {
+  width: 20%;
+}
+.carrito #grid-container-carrito .grid-item-carrito .carrito-eliminar {
   background-color: #ffffff;
   border-radius: 5px;
   border: 2px solid black;
   padding: 4px 10px;
   margin-right: 30px;
 }
-.carrito #grid-container-carrito #grid-item-carrito .carrito-eliminar .fa-trash {
+.carrito #grid-container-carrito .grid-item-carrito .carrito-eliminar .fa-trash {
   color: rgb(177, 26, 26);
 }
 .carrito .carrito-acciones {

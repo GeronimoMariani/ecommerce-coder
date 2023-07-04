@@ -1,76 +1,5 @@
-let bienvenido = document.getElementById("bienvenido");
-
-Swal.fire({
-    title: 'Ingrese su nombre completo:',
-    input: 'text',
-    inputAttributes: {
-    autocapitalize: 'off'
-    },
-    showCancelButton: true,
-    confirmButtonText: 'Crear usuario'
-}).then((result) => {
-    if (result.isConfirmed) {
-        const usuario = result.value;
-        bienvenido.innerHTML = `<i class="fa-regular fa-user" style="color: #ffffff;"></i>Bienvenido: ${usuario}`
-    }
-});
-
-/* const infoUsuario = {
-    nombre: nombre,
-    apellido: apellido,
-    edad: edad,
-}
-
-console.log(infoUsuario);
-const usuarioJSON = JSON.stringify(infoUsuario);
-console.log(usuarioJSON)
-
-localStorage.setItem("usuario", usuarioJSON);
-
-const usuarioJSON2 = JSON.parse(usuarioJSON);
-console.log(usuarioJSON2);
-
-localStorage.setItem("nombre", usuarioJSON2.nombre);
-localStorage.setItem("apellido", usuarioJSON2.apellido);
-localStorage.setItem("edad", usuarioJSON2.edad);
-
-let nombreLocal = localStorage.getItem("nombre"); 
-let apellidoLocal = localStorage.getItem("apellido"); 
-let edadLocal = localStorage.getItem("edad");  */
-
-
-/* class Bebidas {
-    constructor(id, categoria, nombre, precio, stock, image, alt) {
-        this.id = id;
-        this.categoria = categoria;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
-        this.image = image;
-        this.alt = alt;
-    }
-}
-
-const productos = []
-
-productos.push(new Bebidas("cerveza-01", "cervezas", "Brahama", 273, 50, "./images/cerveza-brahama-dorada-473-cc--.jpg", "Brahama"));
-productos.push(new Bebidas("cerveza-02", "cervezas", "Stella Artois Blanche", 299, 46, "./images/cerveza-stella-artois-blanche-473-cc--.jpg", "Stella Artois Blanche"));
-productos.push(new Bebidas("cerveza-03", "cervezas", "Corona 710cc", 759, 26, "./images/cerveza-corona---710-cc--.jpg", "Corona 710cc"));
-productos.push(new Bebidas("whisky-01", "whiskies", "Jack Daniels Honey", 18743, 10, "./images/whisky-jack-daniels-honey-750-ml--.jpg", "Jack Daniels Honey"));
-productos.push(new Bebidas("whisky-02", "whiskies", "Jack Daniels Old", 18743, 15, "./images/whisky-jack-daniels-old-no-7-750-cc--.jpg", "Jack Daniels Old"));
-productos.push(new Bebidas("whisky-03", "whiskies", "Johnnie Walker Black Label", 15155, 13, "./images/whisky-johnnie-walker-black-label-750ml.jpg", "Johnnie Walker Black Label"));
-productos.push(new Bebidas("whisky-04", "whiskies", "Johnnie Walker Blue Label", 102000, 3, "./images/whisky-johnnie-walker-blue-label-750ml.jpg", "Johnnie Walker Blue Label"));
-productos.push(new Bebidas("aperitivo-01", "aperitivos", "Fernet Branca", 2417, 20, "./images/fernet-branca---750-cc--.jpg", "Fernet Branca"));
-productos.push(new Bebidas("vino-01", "vinos", "Vino Varietal terra Malbec Roble", 1450, 18, "./images/vino-varietal-terra-malbec-roble-750-cc--.jpg", "Vino Varietal terra Malbec Roble"));
-productos.push(new Bebidas("vino-02", "vinos", "Vino Varietal Dada Chocolate", 1040, 23, "./images/vino-varietal-dada-n§8-chocolate-750-cc--.jpg", "Vino Varietal Dada Chocolate"));
-productos.push(new Bebidas("vino-03", "vinos", "Mosquita Muerta Blend Tintas", 6400, 8, "./images/vinos-premium-mosquita-muerta-blend-tintas-750-cc--.jpg", "Mosquita Muerta Blend Tintas")); */
-
-
 let gridContainer = document.getElementById("grid-container");
 let btnCarrito = document.querySelectorAll(".btnCarrito");
-
-
-
 
 const pedirProductos = async () => {
     const resp = await
@@ -120,7 +49,14 @@ const pedirProductos = async () => {
             })
         }
         
-        const carrito = []
+        let carrito;
+        let productosEnCarritoLS = localStorage.getItem("carrito");
+        if (productosEnCarritoLS) {
+            carrito = JSON.parse(productosEnCarritoLS);
+            actualizarContadorCarrito()
+        }else {
+            carrito = [];
+        }
         
         function agregarCarrito(e){
             const idBoton = e.currentTarget.id;

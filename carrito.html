@@ -19,12 +19,15 @@
                     <a href="../index.html"><img class="logoImg" src="../images/logo.png" alt="Logo"></a>
                 </div>
             </div>
+            <ul class="list">
+                <li class="navItem">
+                    <a class="text-white" href="./index.html">SEGUIR COMPRANDO</a>
+                </li>
+            </ul>
             <div class="user">
-                <h6 id="bienvenido"><i class="fa-regular fa-user" style="color: #ffffff;"></i></h6>
                 <div class="carrito">
-                    <a href="./pages/carrito.html">
+                    <a href="./carrito.html">
                         <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-                        <span id="contadorCarrito">0</span>
                     </a>
                 </div>
             </div>
@@ -35,57 +38,17 @@
             <h2>Carrito:</h2>
         </div>
         <section class="carrito">
-            <div id="grid-container-carrito">
-                <p class="carrito-vacio">Tu carrito está vacío.</p>
-                <div id="grid-item-carrito">
-                    <img src="../images/cerveza-brahama-dorada-473-cc--.jpg" alt="">
-                    <div class="carrito-nombre">
-                        <h5>Nombre</h5>
-                        <h4>Nombre del producto</h4>
-                    </div>
-                    <div class="carrito-cantidad">
-                        <h5>Cantidad</h5>
-                        <h4>2</h4>
-                    </div>
-                    <div class="carrito-total">
-                        <h5>Total</h5>
-                        <h4>$1000</h4>
-                    </div>
-                    <div class="carrito-subtotal">
-                        <h5>Subtotal</h5>
-                        <h4>$1000</h4>
-                    </div>
-                    <button class="carrito-eliminar"><i class="fa-solid fa-trash"></i></button>
-                </div>
-                <div id="grid-item-carrito">
-                    <img src="../images/cerveza-stella-artois-blanche-473-cc--.jpg" alt="">
-                    <div class="carrito-nombre">
-                        <h5>Nombre</h5>
-                        <h4>Nombre del producto</h4>
-                    </div>
-                    <div class="carrito-cantidad">
-                        <h5>Cantidad</h5>
-                        <h4>2</h4>
-                    </div>
-                    <div class="carrito-total">
-                        <h5>Total</h5>
-                        <h4>$1000</h4>
-                    </div>
-                    <div class="carrito-subtotal">
-                        <h5>Subtotal</h5>
-                        <h4>$1000</h4>
-                    </div>
-                    <button class="carrito-eliminar"><i class="fa-solid fa-trash"></i></button>
-                </div>
+            <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío.</p>
+            <div id="grid-container-carrito" class="disabled">
+
             </div>
-            <div class="carrito-acciones">
+            <div id="carrito-acciones" class="disabled carrito-acciones">
                 <div class="carrito-accion-vaciar">
                     <button class="boton-vaciar">Vaciar carrito</button>
                 </div>
                 <div class="carrito-accion-comprar">
                     <div class="carrito-accion-total">
-                        <p>Total:</p>
-                        <p id="total"> $2000</p>
+                        <p id="total">Total: $0</p>
                     </div>
                     <button class="boton-comprar">Comprar</button>
                 </div>
