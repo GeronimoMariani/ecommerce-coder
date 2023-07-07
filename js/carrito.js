@@ -57,24 +57,19 @@ function actualizarBotonEliminar() {
 }
 
 function eliminarProducto(e) {
+    Swal.fire({
+        icon: 'success',
+        title: 'Eliminado!',
+        text: 'Su producto a sido eliminado correctamente!',
+        showConfirmButton: false,
+        timer: 1000,
+    })
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     productosEnCarrito.splice(index, 1);
     localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
     cargarProductos()
 }
-
-carritoEliminar.forEach((productoElminar) => {
-    productoElminar.addEventListener("click", () => {
-        Swal.fire({
-            icon: 'success',
-            title: 'Eliminado!',
-            text: 'Su producto a sido eliminado correctamente!',
-            showConfirmButton: false,
-            timer: 500,
-        })
-    })
-})
 
 let vaciarCarrito = document.querySelector(".boton-vaciar");
 vaciarCarrito.addEventListener("click", () => {

@@ -15,7 +15,6 @@ const pedirProductos = async () => {
                                         <span><hr></span>
                                         <h3 id="producto-precio">$${producto.precio}</h3>
                                         <h4 id="producto-nombre">${producto.nombre}</h4>
-                                        <h5 id="producto-stock">Stock: ${producto.stock}</h5>
                                         <button class= "btnCarrito" id="${producto.id}">Agregar al carrito</button>`
                 gridContainer.appendChild(gridItem);
             })
@@ -73,7 +72,7 @@ const pedirProductos = async () => {
                 title: 'Genial!',
                 text: 'Su producto a sido agregado correctamente!',
                 showConfirmButton: false,
-                timer: 1000,
+                timer: 500,
             })
             actualizarContadorCarrito()
             localStorage.setItem("carrito", JSON.stringify(carrito));
